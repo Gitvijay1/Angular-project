@@ -1,0 +1,18 @@
+<table class="table">
+    <tr>
+        <th>SID</th>
+        <th>SNAME</th>
+        <th>COURCE</th>
+        <th>FEE</th>
+        <th>DELETE</th>
+        <th>Opration</th>
+    </tr>
+    <tr *ngFor="let s of students">
+        <td>{{s.sid}}</td>
+        <td>{{s.sname}}</td>
+        <td>{{s.scource}}</td>
+        <td>{{s.fee}}</td>
+        <td><button class="btn btn-danger" (click)="deleteStudent(s.sid)">DELETE</button></td>
+        <td><button class="btn btn-success" (click)="showEdit(s.sid)">EDIT</button></td>
+    </tr>
+</table>

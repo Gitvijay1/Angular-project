@@ -1,0 +1,41 @@
+<h1>WELCOME TO STUDENT REGISTER MODULE</h1>
+<form action="#" (ngSubmit)="createStudent()" method="POST">
+  
+    <div class="row">
+      <div class="col-2">ENTER SID</div>
+  <div class="col-4">
+      <input type="text" [(ngModel)]="student.sid" name="sid" id="sid" class="form-control"/>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">ENTER SNAME</div>
+<div class="col-4">
+    <input type="text" [(ngModel)]="student.sname" name="sname" id="sname" class="form-control"/>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-2">ENTER SCOURCE</div>
+<div class="col-4">
+    <input type="text" [(ngModel)]="student.scource" name="scource" id="scource" class="form-control"/>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-2">ENTER FEE</div>
+<div class="col-4">
+    <input type="text" [(ngModel)]="student.fee" name="fee" id="fee" class="form-control"/>
+</div>
+</div>
+ <br/>
+
+<div class="row">
+    <div class="col-2"></div>
+<div class="col-4">
+    <input type="submit" value="register" class="btn btn-success"/>
+</div>
+</div>
+</form>
+
+{{massage}}
